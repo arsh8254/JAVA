@@ -20,7 +20,7 @@ class Student{
 	System.out.println(age+" "+name);
 	}
 }
-public class ShadowingProblem{
+public class Shadowing_Problem{
 	public static void main(String[] args){
 	Student obj=new Student();
 	Student obj1=new Student();

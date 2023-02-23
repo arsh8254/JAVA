@@ -15,7 +15,7 @@ class Student
 	System.out.println(age + " " + name);
 	}
 }
-public class WithEncapsulation{
+public class With_Encapsulation{
 
 	public static void main(String[] args){
 

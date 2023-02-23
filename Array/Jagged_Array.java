@@ -1,6 +1,6 @@
 package Java.Array;
 
-public class JaggedArray {
+public class Jagged_Array {
     public static void main(String[] args) {
                  int nums[][]={
                                 {3,9,7,5},

@@ -1,6 +1,6 @@
 package Java.Array;
 
-public class EnhancedLoopFor2D {
+public class Enhanced_Loop_For_2D {
     public static void main(String[] args) {
             int nums[][]={
                             {3,9,7,5},

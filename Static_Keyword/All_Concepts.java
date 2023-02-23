@@ -26,7 +26,7 @@ class Student
     }
 }
 
-public class AllConcepts
+public class All_Concepts
 {
 
     static      // static block

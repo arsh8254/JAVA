@@ -1,6 +1,6 @@
 package Java.Array;
 
-public class Array1D{
+public class Array_1D{
 public static void main(String[] args) {
         int a[] = {5,7,9,4,67};
         int num = 56;

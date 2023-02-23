@@ -30,7 +30,7 @@ class Student
 	System.out.println(age + " " + name);
 	}
 }
-public class AllTopics{
+public class All_Topics{
 
     public static void main(String[] args){
 	    Student obj=new Student();

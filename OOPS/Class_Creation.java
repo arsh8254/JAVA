@@ -11,7 +11,7 @@ class Calc1
 	
     }
 
-    public class ClassCreation {
+    public class Class_Creation {
     public static void main(String[] agrs){
 
 	    Calc1 obj=new Calc1();

@@ -32,7 +32,7 @@ class Student1       //extends Object
     }
 }
 
-public class ConstructorOverloading 
+public class Constructor_Overloading 
 {
     public static void main(String[] args) 
     {

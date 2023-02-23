@@ -1,6 +1,6 @@
 package Java.Array;
 
-public class Array2D {
+public class Array_2D {
         public static void main(String[] args) {
                 // declaration of array object
                 int nums[][]= new int[3][2];

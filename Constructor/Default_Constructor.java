@@ -28,7 +28,7 @@ class Demo
         System.out.println(b);
     }
 }
-public class DefaultConstructor 
+public class Default_Constructor 
 {
     public static void main(String[] args) 
     {

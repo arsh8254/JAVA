@@ -21,7 +21,7 @@ class Calc
 	    }
 	}
 
-    public class MethodOverloading {
+    public class Method_Overloading {
         public static void main(String[] agrs)
         {
 	    Calc obj=new Calc();

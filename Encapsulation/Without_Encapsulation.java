@@ -10,7 +10,7 @@ class Student
            System.out.println(age+" "+name);
        }
 }
-public class WithoutEncapsulation{
+public class Without_Encapsulation{
        public static void main(String[] args){
        Student obj=new Student();
        obj.age=18;     // the values are getting set here

@@ -8,7 +8,7 @@ class Test
     }       
 
 
-        public class ObjectCreation {
+        public class Object_Creation {
         public static void main(String args[]){
             // declare the variable
             // create the object

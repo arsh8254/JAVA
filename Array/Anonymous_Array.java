@@ -11,7 +11,7 @@ class Calc{
         }
 
     }
-public class AnonymousArray {
+public class Anonymous_Array {
         public static void main(String[] args) {
                 Calc addition = new Calc();
                // int nums[] = {1,3,5,7};       // named array

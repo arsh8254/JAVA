@@ -26,7 +26,7 @@ class Calc2
 	}
 }
 
-    public class AutomaticPromotion {
+    public class Automatic_Promotion {
     public static void main(String[] agrs){
 
 	        Calc2 obj=new Calc2();
