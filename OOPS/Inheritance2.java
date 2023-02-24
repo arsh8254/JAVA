@@ -1,4 +1,4 @@
-package Inheritance;
+package OOPS;
 
 
 class Human1 
@@ -31,7 +31,7 @@ class Student1 extends Human1
     }
 }
 
-public class Intro1 
+public class Inheritance2 
 {
     public static void main(String[] args) 
     {

@@ -1,4 +1,4 @@
-package Inheritance;
+package OOPS;
 
 class Human            //Super class // Base class// Parent class
 {
@@ -15,7 +15,7 @@ class Student extends Human       // Child class// sub class // derived class
     
 }
 
-class Inheritance
+class Inheritance1
 {
     public static void main(String[] args) 
     {

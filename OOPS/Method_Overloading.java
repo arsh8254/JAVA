@@ -1,4 +1,4 @@
-package Java.OOPS;
+package OOPS;
 
 class Calc
     {
