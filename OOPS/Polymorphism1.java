@@ -1,4 +1,6 @@
 package OOPS;
+
+
 class AeroPlane1
 {
     public void takeOff()
@@ -43,22 +45,20 @@ public class Polymorphism1
        
         AeroPlane1 ref;
 
-        ref=cp;
+        ref=cp;     // parent class object can hold child class address
 
+        // calling cargoplane class methods
         ref.takeOff();
         ref.fly();
 
         System.out.println("------------------------------------------------");
         ref=pp;
 
+        // calling passengerplane methods
         ref.takeOff();
         ref.fly();
 
-       // pp=cp;
-        
-       
-
-
+       // pp=cp;   // not allowed
     }
     
 }

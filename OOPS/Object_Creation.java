@@ -8,7 +8,8 @@ class Test
     }       
 
 
-        public class Object_Creation {
+public class Object_Creation 
+{
         public static void main(String args[]){
             // declare the variable
             // create the object
@@ -21,4 +22,4 @@ class Test
             System.out.println(obj1.a);
             System.out.println(obj1.name);
         }
-    }
+}

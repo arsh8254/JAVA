@@ -1,4 +1,6 @@
 package OOPS;
+
+
 class AeroPlane2
 {
     public void takeOff()
@@ -51,14 +53,14 @@ class FighterPlane2 extends AeroPlane2
     }
 }
 
-class Airport
+class Airport      // this class does the real polymorphism
 {
-    public void poly(AeroPlane2 ref)
+    public void poly(AeroPlane2 ref)      // ref will store child class address
     {
         ref.takeOff();
         ref.fly();
 
-        System.out.println("-------------------------------------");
+        System.out.println("-------------");    // just for clear output
     }
 }
 
@@ -67,29 +69,32 @@ public class Polymorphism2
 
     public static void main(String[] args) 
     {
-       CargoPlane2 cp=new CargoPlane2();
+        CargoPlane2 cp=new CargoPlane2();
         
         PassengerPlane2 pp=new PassengerPlane2();
 
         FighterPlane2 fp=new FighterPlane2();
 
+        // AeroPlane2 fp=new FighterPlane2();    // this ia also correct
+
         Airport a=new Airport();
         a.poly(cp);
-        a.poly(pp);
+        a.poly(pp);             // assigning address of each child class 
         a.poly(fp);
+
+
+
 
         // cp.takeOff();
         // cp.fly();
 
-        // pp.takeOff();
+        // pp.takeOff();           // without polymorphismm
         // pp.fly();
 
         // fp.takeOff();
         // fp.fly();
 
-        
-
-
+    
     }
     
 }
