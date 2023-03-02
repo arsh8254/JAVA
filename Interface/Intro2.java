@@ -1,9 +1,9 @@
 interface Computer
 {
-    void compileCode();
+    void compileCode();   // we can't define body till java7
     default void config()
     {
-
+        // we can define body from Java8 onwards in interface
     }
 }
 
