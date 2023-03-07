@@ -1,3 +1,5 @@
+// Association means java supports Has-a and Is-a relationship
+// Has-a is of two types- aggregation and composition
 
 class Car
 {
