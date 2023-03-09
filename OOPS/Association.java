@@ -5,13 +5,13 @@ class Car
 {
       private Engine eng;
 
-//    public Car(Engine eng)
+//    public Car(Engine eng)        // constructor injection
 //    {
 //           this.eng=eng;
 //    }
 
 
-   public void setEng(Engine eng)
+   public void setEng(Engine eng)       // setter injection
    {
             this.eng=eng;
    }
@@ -40,23 +40,23 @@ class Engine
 // {
 //     private Heart h;
 //     public Student(Heart h)
-//     {
-//         this.h=h;
+//     {                            // using constructors
+//         this.h=h;               // constructor accepting reference of heart
 //     }
 //     public void setH(Heart h)
 //     {
-//         this.h=h;
+//         this.h=h;                // using setter to pass heart objects
 //     }
 
 //     public void call()
 //     {
-//         h.heartBeatr();
+//         h.heartBeat();
 //     }
 // }
 // class Heart
 // {
 
-//     public void heartBeatr()
+//     public void heartBeat()
 //     {
 //         System.out.println("Heart is important");
 //     }
@@ -69,12 +69,12 @@ public class Association
     {
         // Heart h=new Heart();
 
-        // Student s=new Student(h);
-        // s.setH(h);
+        // Student s=new Student(h);    // passing heart refernce to constructor
+        // s.setH(h);                   // passing heart refernce using setters
         
         Engine e=new Engine();
 
-        Car c=new Car();
+        // Car c=new Car(e);
 
         c.setEng(e);
 
