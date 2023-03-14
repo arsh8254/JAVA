@@ -14,7 +14,7 @@ public class Single_Catch
 
 		catch(Exception obj)  // obj stores the exception value which can be printed
 		{
-			System.out.println("Something went wrong" + obj);
+			System.out.println("Something went wrong" + obj);   // the exception type is also printed
 		}
         
         System.out.println(result);
