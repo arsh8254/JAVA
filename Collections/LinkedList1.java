@@ -12,17 +12,17 @@ public class LinkedList1
         ll1.add(300);
 
         System.out.println(ll1);
-        System.out.println(ll1.get(1));
+        System.out.println(ll1.get(1));         //value at index 1
 
-        System.out.println(ll1.indexOf(300));
-        System.out.println(ll1.lastIndexOf(300));
+        System.out.println(ll1.indexOf(300));     //gives index of 300
+        System.out.println(ll1.lastIndexOf(300));      // for duplicate objects present at last
         System.out.println(ll1.getFirst());
         System.out.println(ll1.getLast());
 
-        ll1.push(10);
+        ll1.push(10);       //adds object at first place
         System.out.println(ll1);
 
-        System.out.println(ll1.pop());
+        System.out.println(ll1.pop());      //removes object from first place
 
 
        
