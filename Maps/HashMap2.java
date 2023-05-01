@@ -2,7 +2,7 @@
 import java.util.*;
 import java.util.Map.*;
 
-public class Map2 
+public class HashMap2 
 {
     public static void main(String[] args) 
     {

@@ -37,7 +37,7 @@ class Student
 
 
 
-public class Map3 
+public class HashMap3 
 {
     public static void main(String[] args) 
     {
