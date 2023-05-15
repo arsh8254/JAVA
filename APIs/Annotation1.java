@@ -4,11 +4,10 @@
 interface Demo
 {
       void disp();
-    //void disp2();
+    //void disp2();  // adding one more abstract method will give error as it is functinal-interface
 }
 
 //this is parent class 
-
 @Deprecated
 class Plane
 {
@@ -19,7 +18,7 @@ class Plane
    
 }
 
-//this is child class or subclass
+//this is child class
 class CargoPlane extends Plane
 {
     //overriden method from parent class
@@ -36,7 +35,7 @@ public class Annotation1
 {
     public static void main(String[] args) 
     {
-       //object of child classa
+        //object of child classa
         Plane cp=new CargoPlane();
         cp.planeFliesAtGoodHeight();
          
