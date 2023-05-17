@@ -13,13 +13,13 @@ public class File_Write
        FileWriter fw=new FileWriter(file, true);
 
        fw.write("java");
-       fw.write("\n");
-       fw.write(65);
+       fw.write("\n");    // it is an escape sequence for next line
+       fw.write(65);   // it will store the ASCII value of 65 in file
        fw.write("\n");
        fw.write(97);
        fw.write("\n");
        char ch[]={'j', 'a', 'v', 'a'};
-       fw.write(ch);
+       fw.write(ch);   // arrays can also be inserted
        fw.write("\n");
 
        //fw.close();
