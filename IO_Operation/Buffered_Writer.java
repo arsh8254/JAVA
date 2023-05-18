@@ -12,10 +12,10 @@ public class Buffered_Writer
         BufferedWriter bw=new BufferedWriter(fw);
 
         bw.write("Java");
-        bw.newLine();
+        bw.newLine();     //to change the line
         bw.write(65);
         bw.newLine();
-        char ch[]={'p','w','s','j'};
+        char ch[]={'p','w','s','j'};    // to store character arrays
         bw.write(ch);
 
         bw.flush();
