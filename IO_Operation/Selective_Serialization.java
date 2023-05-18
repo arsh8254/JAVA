@@ -3,7 +3,7 @@ import java.io.*;
 class Cricketer1 implements Serializable
 {
      String name;
-     transient int age;
+     transient int age;    // age will not take part in serialization
      int runs;
 
     public Cricketer1(String name, int age, int runs)
