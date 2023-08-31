@@ -10,16 +10,18 @@ public class Prefix_Sum {
     public static void prefixSumMatrix(int[][] arr){
         int m = arr.length;
         int n = arr[0].length;
-        // traversed the array row-wise to calculate the row-wise prefix sum
+        // traverse the array row-wise to calculate the row-wise prefix sum
         for(int i=0; i<m; i++){
+            // Note: analyze why we start with j=1
             for(int j=1; j<n; j++){
                 arr[i][j] += arr[i][j-1];
             }
         }
 
-        // traversed the array column-wise to calculate the column-wise prefix sum
+        // traverse the array column-wise to calculate the column-wise prefix sum
         // final 2D Matrix
         for(int j=0; j<n; j++){
+            // Note: analyze why we start with i=1
             for(int i=1; i<m; i++){
                 arr[i][j] += arr[i-1][j];
             }
@@ -29,7 +31,7 @@ public class Prefix_Sum {
     // time complexity : O(1)
     // space complexity : O(1)
     public static int sumRegion(int[][] arr, int r1, int c1, int r2, int c2){
-        int sum = 0, up = 0, left = 0, repeated_region = 0, result=0;
+        int sum = 0, up = 0, left = 0, repeated_region = 0, result = 0;
         sum = arr[r2][c2];
         up = arr[r1-1][c2];
         left = arr[r2][c1-1];
