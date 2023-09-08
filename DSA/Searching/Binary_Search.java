@@ -12,7 +12,7 @@ public class Binary_Search {
             if(arr[mid] == target){
                 return mid;
             }
-            else if(arr[mid] < target){
+            else if( arr[mid] < target){
                 low = mid + 1;
             }
             else{
@@ -24,7 +24,7 @@ public class Binary_Search {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // size of an element from the user
+        // size of elements from the user
         System.out.println("Enter the number of elements present in an array");
         int n = sc.nextInt();
 
@@ -47,7 +47,7 @@ public class Binary_Search {
             System.out.println("Searched element is not found in an array");
         }
         else{
-            System.out.println("Searched element is found at the location:" +result);
+            System.out.println("Searched element is found at the location:" + result);
         }
 
     }
