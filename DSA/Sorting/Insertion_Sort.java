@@ -14,7 +14,7 @@ public class Insertion_Sort {
                 int temp = arr[j];
                 arr[j] = arr[j-1];
                 arr[j-1] = temp;
-
+                // to compare with all previous elements
                 j--;
             }
         }
