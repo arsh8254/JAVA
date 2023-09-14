@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Count_Ways{
-    // function definition
+    // function definition of fibonacci only
     public static int countFind(int n){
         // base case condition
         if(n <= 1){
