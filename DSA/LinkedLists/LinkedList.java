@@ -126,7 +126,7 @@ class LinkedList {
         Node nextPtr = curr.next;
         curr.next = prev;
         // recursion concept
-        reversalRec(nextPtr, curr);
+        reversalRec(nextPtr, curr);  // with changed parameters
     }
 
 
@@ -135,13 +135,13 @@ class LinkedList {
     // implementation of finding out the middle node in a linked list
     // two-pointer approach
     public void middleNode(){
-        Node slowPtr = head, fastPtr = head;
+        Node slowPtr = head;
+        Node fastPtr = head;
         while(fastPtr != null && fastPtr.next != null){
             slowPtr = slowPtr.next;
             fastPtr = fastPtr.next.next;
         }
-
-        System.out.println("Middle data of a given linked list is: "+slowPtr.data);
+        System.out.println("Middle data of a given linked list is: " + slowPtr.data);
     }
 
 
@@ -150,9 +150,10 @@ class LinkedList {
     // implementation of finding out the cycle in a linked list
     // floyd's cycle detection algorithm - interview based question
     public void detectLoop(){
-        Node slow=head, fast=head;
+        Node slow=head;
+        Node fast=head;
         int flag = 0;
-        while(slow!=null && fast!=null && fast.next!=null){
+        while(slow != null && fast != null && fast.next != null){
             slow = slow.next;
             fast = fast.next.next;
             if(slow == fast){
@@ -160,14 +161,12 @@ class LinkedList {
                 break;
             }
         }
-
         if(flag == 0){
             System.out.println("No loop detected");
         }
         else{
             System.out.println("Loop is detected");
         }
-
     }
 
 
