@@ -28,7 +28,7 @@ public class twoSum {
     // create a result array to display the index of two numbers
     int result[] = new int[2];
 
-    // if current is equal to the target
+    // if current element is equal to the target
     for(int i=0; i<n; i++){
         if(arr[i] == target && map.containsKey(0)){
             result[0] = i;
@@ -37,7 +37,7 @@ public class twoSum {
         }
 
         else if(map.containsKey(target - arr[i])){
-            // Is the element non-repeatable?
+            // The elements are non-repeatable
             if(map.get(target - arr[i]) > i){
                 result[0] = i;
                 result[1] = map.get(target - arr[i]);
