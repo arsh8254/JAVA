@@ -1,14 +1,14 @@
 // time complexity: O(n)
 import java.util.*;
 
-public class validParenthesis {
+public class Valid_Parenthesis {
     public static boolean isValid(String str){
         char[] chars = str.toCharArray();
 
-        Stack<Character> stack1 = new Stack<>();
+        Stack <Character> stack1 = new Stack<>();
 
         for(char ele:chars){
-            // 1. if the element contains open bracket, push it to the stack
+            // if the element contains open bracket, push it to the stack
             if(ele == '(' || ele == '[' || ele == '{'){
                 stack1.push(ele);
                 continue;
@@ -29,7 +29,7 @@ public class validParenthesis {
                 return false;
             }
         }
-            // is the stack is empty or not
+            // is the stack empty or not
             return(stack1.empty() == true);
     }
     
@@ -38,7 +38,7 @@ public class validParenthesis {
         System.out.println("Enter the string: ");
         String str = sc.nextLine();
 
-        System.out.println("Is the given string is valid? "+isValid(str));
+        System.out.println("Is the given string valid? " + isValid(str));
         
     }
 }
