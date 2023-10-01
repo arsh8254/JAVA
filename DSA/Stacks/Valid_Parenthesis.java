@@ -14,23 +14,24 @@ public class Valid_Parenthesis {
                 continue;
             }
 
+            // if no opening bracket is found -- might be only closing bracket are in string
             else if(stack1.empty()){
-                return false;
+                return false;   // invalid
             }
 
             char top = stack1.pop();
             if(top == '(' && ele != ')'){
-                return false;
+                return false;    // invalid
             }
             else if(top == '[' && ele != ']'){
-                return false;
+                return false;    // invalid
             }
             else if(top == '{' && ele != '}'){
-                return false;
+                return false;    // invalid
             }
         }
             // is the stack empty or not
-            return(stack1.empty() == true);
+            return(stack1.empty() == true);    // valid
     }
     
     public static void main(String[] args){
