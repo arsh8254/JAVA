@@ -6,8 +6,8 @@
 import java.util.*;
 
 public class queueusingStack {
-    static Stack<Integer> stack1 = new Stack<>();
-    static Stack<Integer> stack2 = new Stack<>();
+    static Stack <Integer> stack1 = new Stack<>();
+    static Stack <Integer> stack2 = new Stack<>();
 
     // insertion of the data in the queue
     // time complexity : O(1)
@@ -50,10 +50,8 @@ public class queueusingStack {
         q.enQueue(4);
 
         // function calling for deletion of an element from the queue
-        System.out.println("Deleted element is:"+q.deQueue());
-        System.out.println("Deleted element is:"+q.deQueue());
-
-
+        System.out.println("Deleted element is:" +q.deQueue());
+        System.out.println("Deleted element is:" +q.deQueue());
 
     }
     

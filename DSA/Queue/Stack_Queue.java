@@ -6,8 +6,8 @@
 import java.util.*;
 
 public class stackusingQueue {
-    static Queue<Integer> q1 = new LinkedList<>();
-    static Queue<Integer> q2 = new LinkedList<>();
+    static Queue <Integer> q1 = new LinkedList<>();
+    static Queue <Integer> q2 = new LinkedList<>();
 
     // to add a new element in the stack
     // time complexity: O(n)
@@ -43,7 +43,6 @@ public class stackusingQueue {
         return ele;
     }
    
-
     public static void main(String[] args){
         stackusingQueue s = new stackusingQueue();
 
@@ -56,8 +55,8 @@ public class stackusingQueue {
 
        // pop all the elements from the stack
        // LIFO - Last In First Out
-       System.out.println("Deleted element from the stack is: "+s.remove());
-       System.out.println("Deleted element from the stack is: "+s.remove());
+       System.out.println("Deleted element from the stack is: " +s.remove());
+       System.out.println("Deleted element from the stack is: " +s.remove());
 
-}
+    }
 }
