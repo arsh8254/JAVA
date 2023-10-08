@@ -29,19 +29,18 @@ public class quickSort {
     // function of the quicksort algorithm
     public static void quickSort(int[] arr, int l, int h){
         if(l < h){
-            // 1. Divide the array into two subproblems
-            int m = partition(arr, l, h);
-            // 2. Conquer the subproblems via the recursion
-            quickSort(arr, l, m-1);
+            // 1. Divide the array into two sub-problems
+            int m = partition(arr, l, h);   // output of partition algorithm is stored here
+            // 2. Conquer the subproblems via recursion
+            quickSort(arr, l, m-1);    // we will not include pivot element (m)
             quickSort(arr, m+1, h);
-            
         }
     }
 
     // function to display the array
     public static void printArr(int[] arr, int n){
         for(int i=0; i<n; i++){
-            System.out.print(arr[i]+" ");
+            System.out.print(arr[i]+ " ");
         }
         System.out.println(" ");
     }
