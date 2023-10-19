@@ -1,3 +1,4 @@
+// defining binary tree code
 // Class containing left and right child of current node and its value
 class TreeNode {
 	int value;
@@ -54,7 +55,7 @@ class BinaryTree {
 	   4 null null null
 	  / \
    null null
-   
+
 		*/
 
 	}
